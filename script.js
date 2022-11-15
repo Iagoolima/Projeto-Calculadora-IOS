@@ -44,26 +44,34 @@ const comma=()=>{
     }
 }
 
-var number1;
-var number2;
 
+let number1;
+let number2;
 const calculate=(operation)=>{
     let number = document.getElementById('resultNumber').innerHTML;
     if(number != 0){
-    number1 = document.getElementById('resultNumber').innerHTML + operation;
+    number1 = document.getElementById('resultNumber').innerHTML + operation
     document.getElementById('resultNumber').innerHTML =""
     }
 }
 
-
+var teste = false
 const result=()=>{
-    
+   
     if(number1){
-        number2 = document.getElementById('resultNumber').innerHTML;
-        var res = number1 + number2
-        document.getElementById('resultNumber').innerHTML=eval(res)
+        number2 = document.getElementById('resultNumber').innerHTML
+        let res = number1 + number2
+        document.getElementById('resultNumber').innerHTML= eval(res)
+        teste = true
     }
-    
+    // if(teste == true){
+    //     let resultado = document.getElementById('resultNumber').innerHTML;
+    //     let resultado1 = resultado + number2
+    //     document.getElementById('resultNumber').innerHTML= eval(resultado1)
+
+    // }
+
+   
 
 }
 
